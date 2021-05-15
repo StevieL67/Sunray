@@ -47,8 +47,8 @@ connect to wifi               AT+WIFImode,ssid,pass\r\n       +WIFI=mode,ssid,pa
 #define BLE_LATENCY      0
 #define BLE_TIMEOUT      20  
       
-String ssid = "";  // WiFi SSID      (leave empty to not use WiFi)
-String pass = "";  // WiFi password  (leave empty to not use WiFi)
+String ssid = "Netzerkennung fehlgeschlagen";  // WiFi SSID      (leave empty to not use WiFi)
+String pass = "72894927445863836231";  // WiFi password  (leave empty to not use WiFi)
 
 #define WIFI_TIMEOUT_FIRST_RESPONSE  500   // fast response times, for more reliable choose: 800     
 #define WIFI_TIMEOUT_RESPONSE        100    // fast response times, for more reliable choose: 400
@@ -577,5 +577,3 @@ void loop() {
   ArduinoOTA.handle();
 
 }
-
-
